@@ -1,0 +1,23 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[user]
+  signingkey = /home/markus/.ssh/id_signing
+[includeIf "hasconfig:remote.*.url:**/*github.com*/**"]
+    path = ~/.gitconfig-github
+
+[includeIf "hasconfig:remote.*.url:**/*git.rdi.at*/**"]
+    path = ~/.gitconfig-rdi
+
+[includeIf "hasconfig:remote.*.url:**/*gitlab.htlwrn.ac.at*/**"]
+    path = ~/.gitconfig-htl
+
+[core]
+	filemode = false
