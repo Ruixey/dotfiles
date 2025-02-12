@@ -8,11 +8,8 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-echo "Pulling yadm dotfiles..."
-
-if ! $CONFIG_APPLIED; then
-  yadm pull -q && clear;
-  source ~/.bashrc;
-  export CONFIG_APPLIED=true;
+if [[ -z "$CONFIG_APPLIED" ]]; then
+    echo "Pulling yadm dotfiles..."
+    yadm pull -q && clear
+    export CONFIG_APPLIED=true
 fi
-
