@@ -10,6 +10,9 @@ alias grep='grep --color=auto'
 
 echo "Pulling yadm dotfiles..."
 
-yadm pull -q && clear
+if ! $CONFIG_APPLIED; then
+  yadm pull -q && clear;
+  source ~/.bashrc;
+  export CONFIG_APPLIED=true;
+fi
 
-source ~/.bashrc
