@@ -9,7 +9,7 @@
 [commit]
 	gpgsign = true
 [user]
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINj6N4WHVAMx/DwFd10DQyFOEKN16nH6/5eggPWLVc4o signing-key
+	signingkey = ~/.ssh/id_signing
 [includeIf "hasconfig:remote.*.url:**/*github.com*/**"]
     path = ~/.gitconfig-github
 
