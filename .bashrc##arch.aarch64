@@ -12,3 +12,4 @@ echo "Pulling yadm dotfiles..."
 
 yadm pull -q && clear
 
+source ~/.bashrc
