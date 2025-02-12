@@ -8,4 +8,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-yadm pull -q
+echo "Pulling yadm dotfiles..."
+
+yadm pull -q && clear
+
