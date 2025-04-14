@@ -18,7 +18,7 @@ plugins=(
 autoload -U add-zsh-hook
 
 alias d="docker"
-alias dc="docker-compose"
+alias dc="docker compose"
 
 source $ZSH/oh-my-zsh.sh
 
