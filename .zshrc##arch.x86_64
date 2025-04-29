@@ -51,3 +51,4 @@ SAVEHIST=10000
 setopt appendhistory
 
 eval $(thefuck --alias)
+export PATH="$(yarn global bin):$PATH"
