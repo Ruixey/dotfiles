@@ -1,0 +1,16 @@
+{
+	"Makefile help target": {
+		"prefix": "help-target",
+		"body": [
+			"help: ## Show this help message",
+			"\t@printf \"$(GREEN)${workspaceFolderBasename}$(NC)\\n\"",
+			"\t@printf \"========================\\n\"",
+			"\t@printf \"\\n\"",
+			"\t@printf \"Available commands:\\n\"",
+			"\t@printf \"\\n\"",
+			"\t@grep -E '^[a-zA-Z_-]+:.*?## .*\\$\\$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = \":.*?## \"}; {printf \"  \\033[0;32m%-15s\\033[0m %s\\n\", \\$\\$1, \\$\\$2}'",
+			"\t@printf \"\\n\""
+		],
+		"description": "Creates a help target for Makefile that displays available commands"
+	}
+}

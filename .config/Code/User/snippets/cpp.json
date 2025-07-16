@@ -1,0 +1,34 @@
+{
+  "header": {
+    "prefix": "header",
+    "body": [
+      "/* author: Markus Spitzer",
+      " * date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      " * file: $TM_FILENAME",
+      " * class: 2CHIF",
+      " */",
+      ""
+    ],
+    "description": "Log output to console"
+  },
+  "headerfile": {
+    "prefix": "headerfile",
+    "body": [
+      "/* author: Markus Spitzer",
+      " * date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      " * file: $TM_FILENAME",
+      " * class: 2CHIF",
+      " */",
+      "",
+      "/*--------------------------- includes ------------------------------*/",
+      "",
+      "/*--------------------------- defines -------------------------------*/",
+      "",
+      "/*--------------------------- typedefs ------------------------------*/",
+      "",
+      "/*--------------------------- globals -------------------------------*/",
+      "",
+      "/*-------------------------- prototypes -----------------------------*/"
+    ]
+  }
+}
