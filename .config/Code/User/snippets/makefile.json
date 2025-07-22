@@ -3,7 +3,7 @@
 		"prefix": "help-target",
 		"body": [
 			"help: ## Show this help message",
-			"\t@printf \"$(GREEN)${workspaceFolderBasename}$(NC)\\n\"",
+			"\t@printf \"\\033[0;32m${WORKSPACE_NAME}\\033[0m\\n\"",
 			"\t@printf \"========================\\n\"",
 			"\t@printf \"\\n\"",
 			"\t@printf \"Available commands:\\n\"",
